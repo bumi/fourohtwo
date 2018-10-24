@@ -1,0 +1,27 @@
+{
+
+  "manifest_version": 2,
+  "name": "plugLN",
+  "version": "0.1",
+
+  "description": "Should be a plugin to pay Lightninginvoices.",
+
+  "icons": {
+    "400": "icons/BitcoinLN.jpg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["borderify.js"]
+    }
+  ],
+
+    "browser_action": {
+        "default_icon": "icons/BitcoinLN.jpg",
+        "default_title": "Opens plugLN GUI",
+        "default_popup": "app.html"
+    },
+
+    "permissions": ["tabs"]
+}

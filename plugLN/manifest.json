@@ -13,14 +13,14 @@
   "content_scripts": [
     {
       "matches": ["*://*.github.com/*"],
-      "js": ["borderify.js"]
+      "js": ["scripts/borderify.js"]
     }
   ],
 
     "browser_action": {
         "default_icon": "icons/BitcoinLN.jpg",
         "default_title": "Opens plugLN GUI",
-        "default_popup": "app.html"
+        "default_popup": "app/app.html"
     },
 
     "permissions": ["tabs"]

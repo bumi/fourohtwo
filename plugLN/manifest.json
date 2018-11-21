@@ -23,7 +23,7 @@
 
   "background": {
     "scripts": [
-      "scripts/background_listen402.js"
+      "scripts/background/listen402.js"
     ]
   }
 }

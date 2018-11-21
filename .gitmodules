@@ -1,0 +1,3 @@
+[submodule "fourohtwo.wiki"]
+	path = fourohtwo.wiki
+	url = https://github.com/bumi/fourohtwo.wiki.git

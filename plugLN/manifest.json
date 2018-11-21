@@ -1,14 +1,18 @@
 {
-
+  "description": "Should be a plugin to pay Lightninginvoices.",
   "manifest_version": 2,
   "name": "plugLN",
   "version": "0.1",
 
-  "description": "Should be a plugin to pay Lightninginvoices.",
-
   "icons": {
     "400": "icons/BitcoinLN.jpg"
   },
+
+  "permissions": [
+    "webRequest",
+    "<all_urls>",
+    "tabs"
+  ],
 
   "content_scripts": [
     {
@@ -17,11 +21,13 @@
     }
   ],
 
-    "browser_action": {
-        "default_icon": "icons/BitcoinLN.jpg",
-        "default_title": "Opens plugLN GUI",
-        "default_popup": "app/app.html"
-    },
+  "browser_action": {
+    "default_icon": "icons/BitcoinLN.jpg",
+    "default_title": "Opens plugLN GUI",
+    "default_popup": "app/app.html"
+  },
 
-    "permissions": ["tabs"]
+  "background": {
+    "scripts": ["scripts/background.js"]
+  }
 }

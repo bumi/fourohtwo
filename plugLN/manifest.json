@@ -12,7 +12,9 @@
     "webRequest",
     "webRequestBlocking",
     "<all_urls>",
-    "tabs"
+    "tabs",
+    "notifications",
+    "storage"
   ],
 
   "browser_action": {

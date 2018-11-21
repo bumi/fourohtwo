@@ -17,6 +17,10 @@
     "storage"
   ],
 
+  "options_ui": {
+    "page": "settings/options.html"
+  },
+
   "browser_action": {
     "default_icon": "icons/BitcoinLN.jpg",
     "default_title": "Opens plugLN GUI",
@@ -27,5 +31,9 @@
     "scripts": [
       "scripts/background/listen402.js"
     ]
-  }
+  },
+  "applications": {
+    "gecko": {
+      "id": "plugLN@wasgehtab.com",
+    }
 }

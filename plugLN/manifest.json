@@ -30,8 +30,8 @@
 
   "background": {
     "scripts": [
-      "scripts/background_Block.js",
       "scripts/background_Log.js",
+      "scripts/background_Block.js",
       "scripts/background_Mod.js"
     ]
   }

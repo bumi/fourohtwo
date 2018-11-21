@@ -10,6 +10,7 @@
 
   "permissions": [
     "webRequest",
+    "webRequestBlocking",
     "<all_urls>",
     "tabs"
   ],
@@ -28,6 +29,9 @@
   },
 
   "background": {
-    "scripts": ["scripts/background.js"]
+    "scripts": [
+      "scripts/background_Block.js",
+      "scripts/background_Log.js"
+    ]
   }
 }
